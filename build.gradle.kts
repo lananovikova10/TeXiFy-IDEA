@@ -21,6 +21,8 @@ plugins {
 
     // Linting
     id("org.jlleitschuh.gradle.ktlint") version "10.2.1"
+
+    id("org.jetbrains.grammarkit") version "2021.2.1"
 }
 
 group = "nl.hannahsten"
@@ -209,4 +211,17 @@ tasks.jacocoTestReport {
 
 ktlint {
     verbose.set(true)
+}
+
+tasks.generateLexer {
+    source.set("src/nl/hannahsten/texifyidea/grammar/LatexLexer.flex")
+    targetDir.set("gen/nl/hannahsten/texifyidea/grammar/")
+    targetClass.set("LatexLexer")
+}
+
+tasks.generateParser {
+    source.set("src/nl/hannahsten/texifyidea/grammar/Latex.bnf")
+    targetRoot.set("gen")
+    pathToParser.set("nl/hannahsten/texifidea/parser/LatexParser.java")
+    pathToPsiRoot.set("nl/hannahsten/texifyidea/psi")
 }
