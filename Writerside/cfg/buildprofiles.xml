@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+        <algolia-id>D5M21MXSWC</algolia-id>
+        <algolia-index>TeXiFy-IDEA</algolia-index>
+        <algolia-api-key>24051865ac9a05c6332f3e3c04468ea5</algolia-api-key>
+        <search-scopes-provider>https://www.jetbrains.com/</search-scopes-provider>
+        <primary-color>emerald</primary-color>
+
+        <!--        <browser-edits-url>https://github.com/Hannah-Sten/TeXiFy-IDEA/edit/master/Writerside</browser-edits-url>-->
+    </variables>
+    <build-profile instance="texify-docs"/>
+</buildprofiles>
