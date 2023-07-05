@@ -1,3 +1,3 @@
 # Contributing to the documentation
 
-Start typing here...
+To contribute:
